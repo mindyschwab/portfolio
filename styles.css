@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+:root {
+    --eerie-black: #1C1C10ff;
+    --black-olive: #312E1Fff;
+    --silver: #C3C3C3ff;
+    --platinum: #D5D8DDff;
+    --penn-red: rgba(148, 12, 5, 0.825);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 56px;
+    background: url("/images/Main-denise-jans-Lq6rcifGjOU-unsplash.jpg") no-repeat left center fixed;
+    background-size: cover;
+    height: 100vh;
+
+    /* display: flex;
+    flex-direction: column; */
+}
+
+
+
+h1 {
+    font-family: 'Michroma', sans-serif;
+
+    color: var(--eerie-black);
+    padding-top: 90px;
+}
+
+/* Borders for vis only- to remove later */
+body,
+nav,
+.footer-container {
+    border: 3px solid red;
+    color: var(--black-olive);
+    background-color: var(--silver);
+}
+
+#navbar {
+    background-color: var(--platinum);
+}
+
+.footer-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: var(--black-olive);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* flex-grow: 0;
+    flex-shrink: 0; */
+}
+
+#footer-bottom {
+    background-color: var(--eerie-black);
+    color: var(--silver);
+    width: 100%;
+}
+
+.footer-text {
+    font-size: .55rem;
+    color: var(--silver);
+    margin: 0;
+}
