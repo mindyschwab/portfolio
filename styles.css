@@ -70,3 +70,40 @@ nav,
     color: var(--silver);
     margin: 0;
 }
+
+/* *****ABOUT PAGE***** */
+#with-Clem {
+    /* min-width: 250px;
+    min-height: 250px; */
+    /* height: 200px; */
+    padding: 20px;
+    border: 2px solid red;
+}
+
+
+/* ******Resume Formatting ****** */
+#resume-content {
+    background-color: white;
+}
+
+.company-name {
+    font-weight: bold;
+}
+
+.list-group-item {
+    padding: 0.25rem 1.25rem;
+}
+
+.job-title {
+    font-weight: bold;
+    padding-left: 1.25rem;
+}
+
+.bullet {
+    padding: 0.25rem 3rem;
+}
+
+#education,
+#skills {
+    margin-top: 0.5rem;
+}
