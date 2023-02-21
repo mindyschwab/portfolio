@@ -84,6 +84,10 @@ nav,
 /* ******Resume Formatting ****** */
 #resume-content {
     background-color: white;
+    margin: 200px, auto;
+    padding: 10%;
+    width: 75vw;
+    height: 75vh;
 }
 
 .company-name {
@@ -106,4 +110,25 @@ nav,
 #education,
 #skills {
     margin-top: 0.5rem;
+}
+
+/* ***** Modal Styling ***** */
+#resume-modal {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+
+.modal-buttons {
+    padding: 14px 18px;
+    background-color: var(--black-olive);
+    border: none;
+    outline: none;
+    color: var(--platinum);
 }
