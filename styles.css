@@ -10,13 +10,13 @@
     --black-olive: #312E1Fff;
     --silver: #C3C3C3ff;
     --platinum: rgb(213, 216, 221);
-    --penn-red: rgba(148, 12, 5, 0.825);
+    --penn-red: rgba(148, 12, 5, 0.8);
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     padding-top: 56px;
-    background: url("/images/Main-denise-jans-Lq6rcifGjOU-unsplash.jpg") no-repeat left center fixed;
+    background: url("images/Main-denise-jans-Lq6rcifGjOU-unsplash.jpg") no-repeat left center fixed;
     background-size: cover;
     height: 100vh;
 
@@ -37,7 +37,7 @@ nav,
 .footer-container {
     border: 3px solid red;
     color: var(--black-olive);
-    background-color: var(--silver);
+    /* background-color: var(--silver); */
 }
 
 #navbar {
@@ -77,16 +77,17 @@ nav,
 }
 
 .about-content {
-    background-color: rgb(213, 216, 221, 0.85);
+    background-color: rgb(213, 216, 221, 0.875);
+    padding: 5%;
+    margin: 0 auto;
 }
 
 /* ******Resume Formatting ****** */
 #resume-content {
     background-color: white;
-    margin: 200px, auto;
-    padding: 10%;
+    margin: 10% auto;
+    padding: 5%;
     width: 75vw;
-    height: 75vh;
 }
 
 .company-name {
@@ -112,6 +113,11 @@ nav,
     margin-top: 0.5rem;
 }
 
+.about-skills {
+    padding-left: 5%;
+    list-style-type: circle;
+}
+
 /* ***** Modal Styling ***** */
 #resume-modal {
     background-color: rgba(0, 0, 0, 0.75);
@@ -125,12 +131,19 @@ nav,
     display: none;
 }
 
+#modal-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .modal-buttons {
-    padding: 14px 18px;
-    background-color: var(--black-olive);
-    border: none;
+    padding: 12px 14px;
+    border: 2px solid --black-olive;
     outline: none;
-    color: var(--platinum);
+    border-radius: 25%;
+    width: 120px;
+    color: --black-olive display: inline-block;
 }
 
 /**** Projects Page Carousel *****/
