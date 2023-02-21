@@ -19,13 +19,22 @@
 </head>
 
 <body>
-    <h1>Projects Page</h1>
-    <button type="button" class="btn btn-outline-dark">
-        &lsaquo; </button>
-    <img class="project-images" id="project1" src="images/Project 1 placeholder.jpeg" alt="Project 1">
-    <img class="project-images" id="project2" src="images/Project 2 placeholder.jpeg" alt="Project 2">
-    <img class="project-images" id="project3" src="images/Project 3 placeholder.jpeg" alt="Project 3">
-    <button type="button" class="btn btn-outline-dark"> &rsaquo; </button>
+    <h1>Projects</h1>
+    <div class="project-container">
+        <div class="project-images-container">
+            <button type="button" class="project-images-btn" id="back-button"> &lsaquo; </button>
+            <div class="project-images">
+                <img class="project-image" id="project1" src="images/Project 1 placeholder.jpeg" alt="Project 1">
+                <img class="project-image" id="project2" src="images/Project 2 placeholder.jpeg" alt="Project 2">
+                <img class="project-image" id="project3" src="images/Project 3 placeholder.jpeg" alt="Project 3">
+            </div>
+            <button type="button" class="project-images-btn" id="forward-button"> &rsaquo; </button>
+        </div>
+    </div>
+
+    <!-- ****** after MVP, add project description carousel  -->
+    <!-- ******* after MVP, how can I change the display from carousel to column at smaller screen size?? -->
+
     <!-- Bootstap JS links -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
