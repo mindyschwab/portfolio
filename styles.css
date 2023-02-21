@@ -9,7 +9,7 @@
     --eerie-black: #1C1C10ff;
     --black-olive: #312E1Fff;
     --silver: #C3C3C3ff;
-    --platinum: #D5D8DDff;
+    --platinum: rgb(213, 216, 221);
     --penn-red: rgba(148, 12, 5, 0.825);
 }
 
@@ -25,10 +25,8 @@ body {
 }
 
 
-
 h1 {
     font-family: 'Michroma', sans-serif;
-
     color: var(--eerie-black);
     padding-top: 90px;
 }
@@ -73,13 +71,14 @@ nav,
 
 /* *****ABOUT PAGE***** */
 #with-Clem {
-    /* min-width: 250px;
-    min-height: 250px; */
-    /* height: 200px; */
+    /* width: 25%; */
     padding: 20px;
     border: 2px solid red;
 }
 
+.about-content {
+    background-color: rgb(213, 216, 221, 0.85);
+}
 
 /* ******Resume Formatting ****** */
 #resume-content {
@@ -101,6 +100,7 @@ nav,
 .job-title {
     font-weight: bold;
     padding-left: 1.25rem;
+    list-style: none;
 }
 
 .bullet {

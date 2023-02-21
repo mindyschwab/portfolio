@@ -20,15 +20,41 @@
 </head>
 
 <body>
+    <div class="container" id="nav-container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navbar">
+            <a class="navbar-brand" href="#">Mindy Schwabenbauer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!-- after MVP: figure out how to make active or inactive links red -->
+                    <li class="nav-item active">
+                        <a class="nav-link" id="nav-home" href="index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-about" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-projects" href="projects.html">Projects</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
     <h1>About me</h1>
-    <div class="container">
+    <div class="container" id="about-container">
         <div class="row">
             <div class="col-1"></div>
-
-            <img class="about-photo col-md-5 col-sm-10" id="with-Clem" src="images/about-picture.jpeg"
+            <img class="about-photo col-md-5 col-sm-10 about-content" id="with-Clem" src="images/about-picture.jpeg"
                 alt="profile picture with dog">
 
-            <div class="col-md-5 col-sm-10">
+            <div class="col-md-5 col-sm-10 about-content">
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus soluta perspiciatis reiciendis,
                     repellat corrupti vel voluptatum aliquid consequatur? Sequi illo nesciunt modi dolore! Voluptates
                     accusantium assumenda, velit nesciunt accusamus id.</p>
