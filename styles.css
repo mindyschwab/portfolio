@@ -1,3 +1,5 @@
+/* ***** after MVP- see if I can add grainy film transition: https: //codepen.io/josetxu/pen/yLjwOwQ */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -10,7 +12,7 @@
     --black-olive: #312E1Fff;
     --silver: #C3C3C3ff;
     --platinum: rgb(213, 216, 221);
-    --penn-red: rgba(148, 12, 5, 0.8);
+    --penn-red: rgba(164, 25, 4, 0.815);
 }
 
 body {
@@ -70,15 +72,16 @@ nav,
 }
 
 /* *****ABOUT PAGE***** */
+#about-container {
+    background-color: rgb(213, 216, 221, 0.875);
+}
+
 #with-Clem {
-    /* width: 25%; */
-    padding: 20px;
-    border: 2px solid red;
+    padding: 2.5%;
 }
 
 .about-content {
-    background-color: rgb(213, 216, 221, 0.875);
-    padding: 5%;
+    padding: 2.5%;
     margin: 0 auto;
 }
 
@@ -154,30 +157,34 @@ nav,
     align-items: center;
 }
 
-.project-images-container {
+.project-images-container,
+.project-descr-container {
     width: 75%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 4px solid red;
+    background-color: var(--penn-red);
 }
 
-.project-images {
+.project-images,
+.project-descr {
     width: 85%;
-    /* background: #fa8d8e; */
     padding: 10px;
-    /* border-radius: 10px;
-    box-sizing: border-box; */
-    /* box-shadow: 2px 2px #f2cd99; */
+    color: var(--eerie-black);
 }
 
-.project-images img {
+.project-images img,
+.project-descrs article {
     width: 100%;
     border-radius: 10px;
     display: none;
 }
 
 .project-images img:first-of-type {
+    display: block;
+}
+
+.project-descrs article:first-of-type {
     display: block;
 }
 
