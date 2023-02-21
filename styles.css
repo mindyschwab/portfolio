@@ -26,7 +26,6 @@ body {
     flex-direction: column; */
 }
 
-
 h1 {
     font-family: 'Michroma', sans-serif;
     color: var(--eerie-black);
@@ -85,69 +84,6 @@ nav,
     margin: 0 auto;
 }
 
-/* ******Resume Formatting ****** */
-#resume-content {
-    background-color: white;
-    margin: 10% auto;
-    padding: 5%;
-    width: 75vw;
-}
-
-.company-name {
-    font-weight: bold;
-}
-
-.list-group-item {
-    padding: 0.25rem 1.25rem;
-}
-
-.job-title {
-    font-weight: bold;
-    padding-left: 1.25rem;
-    list-style: none;
-}
-
-.bullet {
-    padding: 0.25rem 3rem;
-}
-
-#education,
-#skills {
-    margin-top: 0.5rem;
-}
-
-.about-skills {
-    padding-left: 5%;
-    list-style-type: circle;
-}
-
-/* ***** Modal Styling ***** */
-#resume-modal {
-    background-color: rgba(0, 0, 0, 0.75);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    overflow: auto;
-    display: none;
-}
-
-#modal-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.modal-buttons {
-    padding: 12px 14px;
-    border: 2px solid --black-olive;
-    outline: none;
-    border-radius: 25%;
-    width: 120px;
-    color: --black-olive display: inline-block;
-}
 
 /**** Projects Page Carousel *****/
 
@@ -204,3 +140,67 @@ nav,
 /* .project-images-btn:hover {
     border: 2px solid --eerie-black;
 } */
+
+/* ***** Modal Styling ***** */
+#resume-modal {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+
+#footer-modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.buttons-modal {
+    padding: 12px 14px;
+    border: 2px solid --black-olive;
+    outline: none;
+    border-radius: 25%;
+    width: 120px;
+    color: --black-olive;
+}
+
+/* ******Resume Formatting ****** */
+#resume-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 5%;
+    width: 75vw;
+}
+
+.company-name {
+    font-weight: bold;
+}
+
+.list-group-item {
+    padding: 0.25rem 1.25rem;
+}
+
+.job-title {
+    font-weight: bold;
+    padding-left: 1.25rem;
+    list-style: none;
+}
+
+.bullet {
+    padding: 0.25rem 3rem;
+}
+
+#education,
+#skills {
+    margin-top: 0.5rem;
+}
+
+.about-skills {
+    padding-left: 5%;
+    list-style-type: circle;
+}
