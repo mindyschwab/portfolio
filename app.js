@@ -31,7 +31,6 @@ const closeResume = () => {
 resumeLink.addEventListener('click', openResume);
 closeBtn.addEventListener('click', closeResume);
 
-
 // ***** Project Image Carousel****
 let currentImgIndex = 0;
 let previousImgIndex = 0;
@@ -66,5 +65,3 @@ function carousel(imgIdexChange) {
     images[currentImgIndex].style.display = 'block';
     descriptions[currentImgIndex].style.display = 'block';
 }
-
-
