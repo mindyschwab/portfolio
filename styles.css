@@ -1,10 +1,7 @@
-/* ***** after MVP- see if I can add grainy film transition: https: //codepen.io/josetxu/pen/yLjwOwQ */
-
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
 }
 
 :root {
@@ -20,42 +17,57 @@ body {
     padding-top: 56px;
     background: url("images/Main-denise-jans-Lq6rcifGjOU-unsplash.jpg") no-repeat left center fixed;
     background-size: cover;
-    height: 100vh;
-
-    /* display: flex;
-    flex-direction: column; */
+    color: var(--eerie-black);
 }
 
 h1 {
     font-family: 'Michroma', sans-serif;
     color: var(--eerie-black);
-    padding-top: 90px;
+    padding-top: 100px;
 }
 
-/* Borders for vis only- to remove later */
-body,
-nav,
-.footer-container {
-    border: 3px solid red;
-    color: var(--black-olive);
-    /* background-color: var(--silver); */
+main {
+    padding-bottom: 120px;
 }
 
-#navbar {
-    background-color: var(--platinum);
+/* ***** Navbar styling *****/
+#navbar-icon {
+    height: 30px;
+    width: 30px;
 }
 
+.nav-link {
+    font-size: 1.5rem;
+    color: var(--eerie-black);
+    font-weight: 300;
+}
+
+.navbar.scrolled {
+    background: rgb(164, 166, 171);
+    transition: background 800ms;
+}
+
+/* ****Footer Styling***** */
 .footer-container {
     position: fixed;
     left: 0;
     bottom: 0;
     text-align: center;
-    background-color: var(--black-olive);
+    align-items: center;
+    background-color: var(--platinum);
     width: 100%;
-    padding: 0;
     margin: 0;
-    /* flex-grow: 0;
-    flex-shrink: 0; */
+    padding: 0%;
+}
+
+.footer-links {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    padding-left: 25%;
 }
 
 #footer-bottom {
@@ -65,9 +77,14 @@ nav,
 }
 
 .footer-text {
-    font-size: .55rem;
+    font-size: .65rem;
     color: var(--silver);
     margin: 0;
+}
+
+.footer-icon {
+    height: 30px;
+    width: 30px;
 }
 
 /* *****ABOUT PAGE***** */
@@ -76,30 +93,39 @@ nav,
 }
 
 #with-Clem {
-    padding: 2.5%;
+    padding: 3.5%;
 }
 
-.about-content {
-    padding: 2.5%;
-    margin: 0 auto;
+#education,
+#skills {
+    margin-top: 0.5rem;
 }
 
+.about-skills {
+    padding-left: 5%;
+    list-style-type: circle;
+}
+
+#resume {
+    padding-left: 5%;
+}
 
 /**** Projects Page Carousel *****/
-
 .project-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 120px;
 }
 
 .project-images-container,
 .project-descr-container {
-    width: 75%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--penn-red);
+    padding: 2.5%;
 }
 
 .project-images,
@@ -135,11 +161,6 @@ nav,
     padding: 1px;
     border-radius: 15%;
 }
-
-/* ****get this working once MVP is ready */
-/* .project-images-btn:hover {
-    border: 2px solid --eerie-black;
-} */
 
 /* ***** Modal Styling ***** */
 #resume-modal {
@@ -195,12 +216,10 @@ nav,
     padding: 0.25rem 3rem;
 }
 
-#education,
-#skills {
-    margin-top: 0.5rem;
-}
+/* ***** Media Query ***** */
+@media only screen and (min-width: 768px) {
+    h1 {
+        padding-top: 30px;
+    }
 
-.about-skills {
-    padding-left: 5%;
-    list-style-type: circle;
 }

@@ -20,8 +20,11 @@
 
 <body>
     <div class="container" id="nav-container">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navbar">
-            <a class="navbar-brand" href="#">Mindy Schwabenbauer</a>
+        <nav class="navbar fixed-top navbar-expand-md navbar-light py-0" id="navbar">
+            <!-- Film icons created by Freepik - Flaticon -->
+            <a class="navbar-brand" href="#">
+                <img src="images/navbar-icon.png" width="35" height="35" alt="film icon" id="navbar-icon">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <!-- after MVP: figure out how to make active or inactive links red -->
-                    <li class="nav-item">
+                    <li class="nav-item" id="active-nav-link">
                         <a class="nav-link" id="nav-home" href="index.html">Home <span
                                 class="sr-only">(current)</span></a>
                     </li>
@@ -45,50 +48,78 @@
             </div>
         </nav>
     </div>
-
-    <h1>Projects</h1>
-    <div class="project-container">
-        <div class="project-images-container">
-            <button type="button" class="project-images-btn" id="back-button"> &lsaquo; </button>
-            <div class="project-images">
-                <img class="project-image" id="project1" src="images/Project 1 placeholder.jpeg" alt="Project 1">
-                <img class="project-image" id="project2" src="images/Project 2 placeholder.jpeg" alt="Project 2">
-                <img class="project-image" id="project3" src="images/Project 3 placeholder.jpeg" alt="Project 3">
-            </div>
-            <button type="button" class="project-images-btn" id="forward-button"> &rsaquo; </button>
+    <main class="main-container">
+        <div class="container-fluid">
+            <h1>Projects</h1>
         </div>
-        <div class="project-descr-container">
-            <div class="project-descrs">
-                <article class="project-descr"> Project 1: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aspernatur architecto libero dignissimos, quod natus quo facilis velit voluptate, repellat impedit
-                    assumenda dolore accusamus nihil veniam, laudantium rerum distinctio pariatur cum!</article>
-                <article class="project-descr"> Project 2: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aspernatur
-                    architecto libero dignissimos, quod natus quo facilis velit voluptate, repellat impedit assumenda
-                    dolore accusamus
-                    nihil veniam, laudantium rerum distinctio pariatur cum!</article>
-                <article class="project-descr"> Project 3: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aspernatur
-                    architecto libero dignissimos, quod natus quo facilis velit voluptate, repellat impedit assumenda
-                    dolore accusamus
-                    nihil veniam, laudantium rerum distinctio pariatur cum!</article>
+
+        <div class="project-container">
+            <div class="project-images-container">
+                <button type="button" class="project-images-btn" id="back-button"> &lsaquo; </button>
+                <div class="project-images">
+                    <img class="project-image" id="project1" src="images/Project 1 placeholder.jpeg" alt="Project 1">
+                    <img class="project-image" id="project2" src="images/Project 2 placeholder.jpeg" alt="Project 2">
+                    <img class="project-image" id="project3" src="images/Project 3 placeholder.jpeg" alt="Project 3">
+                </div>
+                <button type="button" class="project-images-btn" id="forward-button"> &rsaquo; </button>
+            </div>
+            <div class="project-descr-container">
+                <div class="project-descrs">
+                    <article class="project-descr"> Project 1: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aspernatur architecto libero dignissimos, quod natus quo facilis velit voluptate, repellat
+                        impedit
+                        assumenda dolore accusamus nihil veniam, laudantium rerum distinctio pariatur cum!</article>
+                    <article class="project-descr"> Project 2: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aspernatur
+                        architecto libero dignissimos, quod natus quo facilis velit voluptate, repellat impedit
+                        assumenda
+                        dolore accusamus
+                        nihil veniam, laudantium rerum distinctio pariatur cum!</article>
+                    <article class="project-descr"> Project 3: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aspernatur
+                        architecto libero dignissimos, quod natus quo facilis velit voluptate, repellat impedit
+                        assumenda
+                        dolore accusamus
+                        nihil veniam, laudantium rerum distinctio pariatur cum!</article>
+                </div>
             </div>
         </div>
-    </div>
+        <!-- **** Foooter ***** -->
+        <div class="container-fluid footer-container">
+            <Footer>
+                <div class=" footer footer-links">
+                    <!-- after MVP add icons for these -->
+                    <a href="https://www.linkedin.com/in/mindyschwabenbauer/">
+                        <img class="footer-icon" src="images/LinkedIn-icon.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://github.com/mindyschwab">
+                        <img class="footer-icon" src="images/GitHub-icon.png" alt="GitHub Icon">
+                    </a>
+                    <a href="mailto:mindy.schwabenbauer@gmail.com">
+                        <img class="footer-icon" src="images/Email-icon.png" alt="Email Icon">
+                    </a>
+                </div>
 
-    <!-- ****** after MVP, add project description carousel  -->
-    <!-- ******* after MVP, how can I change the display from carousel to column at smaller screen size?? -->
+                <div class="footer footer-bottom" id="footer-bottom">
+                    <p class="footer-text"> Copyright &#169; 2023 Mindy Schwabenbauer</p>
+                    <p class="footer-text">
+                        Image icons by <a
+                            href="https://www.freepik.com/free-vector/selection-hand-drawn-cinema-objects_1023736.htm#query=film%20icon&position=4&from_view=search&track=scalerv1">Freepik</a>
+                    </p>
 
-    <!-- Bootstap JS links -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+                </div>
+            </Footer>
+        </div>
+        <!-- Bootstap JS links -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

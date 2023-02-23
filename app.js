@@ -1,3 +1,20 @@
+// **** navbar scroll***
+// resource used for navbar scroll: https://www.youtube.com/watch?v=t1rEsuB3t2Y
+const navbar = document.getElementById('navbar');
+console.log(navbar)
+
+window.addEventListener('scroll', navColor);
+
+function navColor() {
+    if (document.documentElement.scrollTop > 52) {
+        navbar.classList.add('scrolled')
+        console.log("inside scroll function")
+    }
+    else {
+        navbar.classList.remove('scrolled')
+    }
+}
+
 // **** Resume Modal ******
 const resumeLink = document.getElementById('resume');
 const resumeDoc = document.getElementById('resume-modal')
@@ -49,3 +66,5 @@ function carousel(imgIdexChange) {
     images[currentImgIndex].style.display = 'block';
     descriptions[currentImgIndex].style.display = 'block';
 }
+
+

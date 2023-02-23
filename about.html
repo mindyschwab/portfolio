@@ -21,8 +21,11 @@
 
 <body>
     <div class="container" id="nav-container">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navbar">
-            <a class="navbar-brand" href="#">Mindy Schwabenbauer</a>
+        <nav class="navbar fixed-top navbar-expand-md navbar-light py-0" id="navbar">
+            <!-- Film icons created by Freepik - Flaticon -->
+            <a class="navbar-brand" href="#">
+                <img src="images/navbar-icon.png" width="35" height="35" alt="film icon" id="navbar-icon">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <!-- after MVP: figure out how to make active or inactive links red -->
-                    <li class="nav-item">
+                    <li class="nav-item" id="active-nav-link">
                         <a class="nav-link" id="nav-home" href="index.html">Home <span
                                 class="sr-only">(current)</span></a>
                     </li>
@@ -46,32 +49,293 @@
             </div>
         </nav>
     </div>
+    <main>
+        <div class="container-fluid">
+            <h1>About me</h1>
+        </div>
+        <section class="container-fluid" id="about-container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-1 order-md-2 order-lg-1">
+                    <img src="images/about-picture.jpeg" class="img-fluid about-photo about-content "
+                        alt="Responsive image">
+                </div>
+                <div class="col-lg-6 about-content order-2 order-md-1 order-lg-2">
+                    <div class="row justify-content-center">
+                        <div class="col-10 ">
+                            <p> My work experience has been in the field of Human Resources. As an HR professional with
+                                12+
+                                years of
+                                experience I lead initiatives and projects supporting employees while driving
+                                organizational
+                                growth,
+                                across industries and companies of all sizes. My career has been defined by my ability
+                                to learn
+                                quickly and solve complex problems. I have strong analytical skills, am detail oriented,
+                                and
+                                love to
+                                collaborate with others to tackle new challenges which has lead me to Software
+                                Engineering.</p>
+                            <p>Outside of work, I'm taking a class in ceramic arts and fostering litters of kittens. I
+                                also
+                                enjoy
+                                all the natural beauty that the pacific northwest has to offer with my partner and
+                                corgi,
+                                Clementine.</p>
+                            <h4>Skills/languages</h4>
+                            <ul class="about-skills">
+                                <li>Javascript</li>
+                                <li>node JS</li>
+                                <li>DOM</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                                <li>CLI</li>
+                                <li>HTML</li>
+                                <li>Git/GitHub</li>
+                            </ul>
+                            <h4>Resume</h4>
+                            <a id="resume" href="#">
+                                <img class="footer-icon" src="images/Resume-icon.png" alt="Resume Icon">
+                            </a>
+                        </div>
+                    </div>
 
-    <h1>About me</h1>
-    <div class="container" id="about-container">
-        <div class="row">
-            <img class="about-photo col-lg-6 col-md-10 about-content" id="with-Clem" src="images/about-picture.jpeg"
-                alt="profile picture with dog">
-            <div class="col-md-6 col-sm-10 about-content">
-                <p> My work experience has been in the field of Human Resources. As an HR professional with 12+ years of
-                    experience I lead initiatives and projects supporting employees while driving organizational growth,
-                    across industries and companies of all sizes. My career has been defined by my ability to learn
-                    quickly and solve complex problems. I have strong analytical skills, am detail oriented, and love to
-                    collaborate with others to tackle new challenges which has lead me to Software Engineering.</p>
-                <p>Outside of work, I'm taking a class in ceramic arts and fostering litters of kittens. I also enjoy
-                    all the natural beauty that the pacific northwest has to offer with my partner and corgi,
-                    Clementine.</p>
-                <h3>Skills/languages</h3>
-                <ul class="about-skills">
-                    <li>Javascript</li>
-                    <li>node JS</li>
-                    <li>DOM</li>
-                    <li>CSS</li>
-                    <li>Bootstrap</li>
-                    <li>CLI</li>
-                    <li>HTML</li>
-                    <li>Git/GitHub</li>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- **** Foooter ***** -->
+    <div class="container-fluid footer-container">
+        <Footer>
+            <div class=" footer footer-links">
+                <!-- after MVP add icons for these -->
+                <a href="https://www.linkedin.com/in/mindyschwabenbauer/">
+                    <img class="footer-icon" src="images/LinkedIn-icon.png" alt="LinkedIn Icon">
+                </a>
+                <a href="https://github.com/mindyschwab">
+                    <img class="footer-icon" src="images/GitHub-icon.png" alt="GitHub Icon">
+                </a>
+                <a href="mailto:mindy.schwabenbauer@gmail.com">
+                    <img class="footer-icon" src="images/Email-icon.png" alt="Email Icon">
+                </a>
+            </div>
+
+            <div class="footer footer-bottom" id="footer-bottom">
+                <p class="footer-text"> Copyright &#169; 2023 Mindy Schwabenbauer</p>
+                <p class="footer-text">
+                    Image icons by <a
+                        href="https://www.freepik.com/free-vector/selection-hand-drawn-cinema-objects_1023736.htm#query=film%20icon&position=4&from_view=search&track=scalerv1">Freepik</a>
+                </p>
+
+            </div>
+        </Footer>
+    </div>
+
+    <!-- ***** Resume Modal Content**** -->
+    <div id="resume-modal">
+        <div id="resume-content">
+            <div>
+                <h4> MINDY SCHWABENBAUER</h4>
+                <p> Seattle, WA, USA</p>
+                <p> Email: Mindy.Schwabenbauer@gmail.com</p>
+            </div>
+            <div>
+                <h5>Summary:</h5>
+                <p> Detail oriented and organized professional with excellent follow-through abilities, able to lead
+                    projects
+                    from concept to successful conclusion. Ability to effectively communicate and develop strategic
+                    partnerships
+                    with all
+                    levels of employees, vendors,internal and external clients, and peers. Commitment to customer
+                    service,
+                    quality, process improvement, and
+                    aligning Human Resources goals with overall business strategy</p>
+            </div>
+            <div>
+                <div>
+                    <H5>Experience:</H5>
+                </div>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary"><span class="company-name">AMAZON</span>
+                        </li>
+                        <li class="list-group-item list-group-item-light">2019- 2022</li>
+                        <li class="list-group-item-light job-title">Senior Program Manager M&A</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary"><span class="company-name">ALASKA AIRLINES
+                            </span>
+                        </li>
+                        <li class="list-group-item list-group-item-light">
+                            2015 - 2019
+                        </li>
+                        <li class="list-group-item-light job-title">Human Resources Business Partner
+                        </li>
+                        <li class=" list-group-item bullet">Build and maintain strong partnerships with operational
+                            and corporate business leaders in order to develop successful people strategies that align
+                            with business objectives and
+                            address complex human resources challenges
+                        </li>
+                        <li class="list-group-item bullet">Managed employee support during integration with Virgin
+                            America to ensure employee needs
+                            were met, including: employment offers, employment policy integration, guidance on retention
+                            programs and system transition
+                        </li>
+                        <li class="list-group-item bullet">Created leadership transition plans and timelines and
+                            proactively planned training for
+                            leaders and employees to ensure smooth merger experience and business continuation
+                        </li>
+                        <li class="list-group-item bullet">Partnered with business leaders upon acquisition to
+                            evaluate, plan and implement short term and
+                            long term organizational staffing and worked with internal partners to develop innovative
+                            employment and staffing solutions
+                        </li>
+                        <li class="list-group-item bullet">Lead process improvement projects with the goal of improving
+                            the employee experience, increasing
+                            consistency and efficiency, including employee loss and exemption status compliance
+                        </li>
+                        <li class="list-group-item bullet">Lead the implementations of company-wide Human Resources
+                            initiatives – customizing plans by work
+                            group, incorporating change management and communication best practices
+                        </li>
+                        <li class="list-group-item bullet">Facilitate talent calibration sessions by division and
+                            partner with business leaders on succession planning, effective goal setting, evaluation,
+                            and employee performance
+                        </li>
+                        <li class="list-group-item bullet">Provide compensation support including creation of internal
+                            and external offers, promotions, merit, and job creation and evaluation
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary"><span class="company-name">PROSERV</span>
+                        </li>
+                        <li class="list-group-item list-group-item-light">2014 - 2015</li>
+                        <li class="list-group-item-light job-title">Human Resources Advisor</li>
+                        <li class="list-group-item list-group-item-light">Contract 2015</li>
+                        <li class="list-group-item-light job-title">Human Resources Consultant</li>
+                        <li class=" list-group-item bullet">Strategic Human Resources advisory responsibility for 300
+                            professional employees in the North American market across three business units
+                        </li>
+                        <li class=" list-group-item bullet">Managed employee relations issues including coaching,
+                            succession planning, employee development, organizational effectiveness, terminations and
+                            reductions in force
+                        </li>
+                        <li class=" list-group-item bullet">Provided business leaders with advisory support including
+                            policy interpretation, violation investigations, and ensured legal compliance in all
+                            employee transactions
+                        </li>
+                        <li class=" list-group-item bullet">Proactively communicated with stakeholders on Human
+                            Resources service-related issues
+                        </li>
+                        <li class=" list-group-item bullet">Lead development of a regional compensation program
+                            including creation of a salary structure, salary survey selection and participation,
+                            approval of salary changes and job leveling
+                        </li>
+                        <li class=" list-group-item bullet">Partnered with international recruiting team in selection
+                            and
+                            implementation of an applicant
+                            tracking
+                            system
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary"><span class="company-name">ABM INDUSTRIES
+                            </span></li>
+                        <li class="list-group-item list-group-item-light">2011 - 2014 </li>
+                        <li class="list-group-item-light job-title">Human Resources Generalist - Security Division</li>
+                        <li class=" list-group-item bullet">Human Resources Generalist responsibility for 1200 security,
+                            administrative and management employees in the South Central market in five branch locations
+                        </li>
+                        <li class=" list-group-item bullet">Supervised Human Resources intern and two temporary
+                            employees
+                        </li>
+                        <li class=" list-group-item bullet">Successfully developed and implemented complaint
+                            investigation processes and templates, providing
+                            additional legal protection to the company, reducing processing time by creating
+                            standardized formats, facilitating case analysis and deterring false complaints (average
+                            number of days to complete an investigation reduced by 90 days)
+                        </li>
+                        <li class=" list-group-item bullet">Partnered with legal team to prepare employer responses to
+                            EEO charges with a 100% rate of dismissal
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary"><span class="company-name">ST. DAVID’S
+                                CENTER
+                            </span></li>
+                        <li class="list-group-item list-group-item-light">2010 - 2011</li>
+                        <li class="list-group-item-light job-title">Human Resources Generalist</li>
+                        <li class=" list-group-item bullet">Provided excellent internal customer service by managing all
+                            day-to-day Human Resources
+                            activities
+                            including recruitment, training, benefits, compensation, and employee relations
+                        </li>
+                        <li class=" list-group-item bullet">Screened applicants for high volume entry level social
+                            service, administrative and professional level mental health positions, filling an average
+                            of 575 positions annually
+                        </li>
+                        <li class="list-group-item list-group-item-light">2008 - 2010</li>
+                        <li class="list-group-item-light job-title">Human Resources Intern </li>
+                        <li class=" list-group-item bullet">HR projects
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary"><span class="company-name">DONATELLE
+                                MANUFACTURING</span> </li>
+                        <li class="list-group-item list-group-item-light">2009</li>
+                        <li class="list-group-item-light job-title">Human Resources Intern</li>
+                        <li class=" list-group-item bullet">HR projects
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h5 id="education">Education:</h5>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary"><span class="company-name">General
+                            Assembly</span>
+                    </li>
+                    <li class=" list-group-item bullet">Software Engineering Immersive, 2023
+                    </li>
                 </ul>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary"><span class="company-name">University of
+                            Minnesota</span></li>
+                    <li class=" list-group-item bullet">MA-HRIR, (Human Resources and Industrial Relations), 2010
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary"><span class="company-name">University of
+                            Minnesota</span></li>
+                    <li class=" list-group-item bullet">B.A., Psychology, 2008
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5 id="skills">Skills:</h5>
+                <li class="list-group-item bullet">HRIS systems: PeopleSoft, JD Edwards, ADP
+                </li>
+                <li class="list-group-item bullet">ReportSmith and BI Reporting
+                </li>
+                <li class="list-group-item bullet">Working knowledge of federal labor and employment laws
+                </li>
+                <li class="list-group-item bullet">Talent Management Suite
+                </li>
+                <li class="list-group-item bullet">MS Office Suite
+                </li>
+            </div>
+            <br>
+            <div id="footer-modal">
+                <button class="buttons-modal" id="close-modal">Close</button>
             </div>
         </div>
     </div>
