@@ -1,14 +1,12 @@
 // **** navbar scroll***
 // resource used for navbar scroll: https://www.youtube.com/watch?v=t1rEsuB3t2Y
 const navbar = document.getElementById('navbar');
-console.log(navbar)
 
 window.addEventListener('scroll', navColor);
 
 function navColor() {
     if (document.documentElement.scrollTop > 52) {
         navbar.classList.add('scrolled')
-        console.log("inside scroll function")
     }
     else {
         navbar.classList.remove('scrolled')
@@ -39,7 +37,7 @@ const descriptions = document.getElementsByClassName('project-descr');
 const images = document.getElementsByClassName('project-image');
 const back = document.getElementById('back-button')
 const forward = document.getElementById('forward-button')
-console.log(forward)
+
 forward.addEventListener('click', () => {
     carousel(1)
 })
