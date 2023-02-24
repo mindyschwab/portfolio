@@ -5,6 +5,7 @@ Project 1: portfolio website
 
 ## Technologies used
 HTML, CSS and Javascript
+Visual Studio Code
 ## Screenshot of the app: 
 ![alt text](images/Website-Screenshot.png "Logo Title Text 1")
  
