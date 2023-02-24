@@ -5,13 +5,16 @@ Project 1: portfolio website
 
 ## Technologies used
 HTML, CSS and Javascript
+CSS framework: Bootstap
+Git GitHub
 Visual Studio Code
+Resource used for navbar scroll: https://www.youtube.com/watch?v=t1rEsuB3t2Y
 ## Screenshot of the app: 
 ![alt text](images/Website-Screenshot.png "Logo Title Text 1")
  
 
 ## Installation instructions
-Download html, css and html files and images folder. 
+Clone respository or download html, css and html files and images folder. 
 Open html file with local server (VS code Live Preview) to view the page in the browser. Navigate between the html pages using the navigation bar at the top of the website. 
 
 ## User stories 
