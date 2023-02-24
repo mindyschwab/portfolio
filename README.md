@@ -3,9 +3,9 @@ General Assembly - SEI Mariposa
 
 Project 1: portfolio website
 
-### Technologies used
+## Technologies used
 HTML, CSS and Javascript
-### Screenshot of the app: 
+## Screenshot of the app: 
 ![alt text](images/Website-Screenshot.png "Logo Title Text 1")
  
 
