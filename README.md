@@ -8,6 +8,7 @@ HTML, CSS and Javascript
 CSS framework: Bootstap
 Git GitHub
 Visual Studio Code
+
 Resource used for navbar scroll: https://www.youtube.com/watch?v=t1rEsuB3t2Y
 ## Screenshot of the app: 
 ![alt text](images/Website-Screenshot.png "Logo Title Text 1")
